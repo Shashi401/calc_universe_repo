@@ -1,0 +1,1 @@
+// Content of updated MortgageCalculator.tsx with amortization chart

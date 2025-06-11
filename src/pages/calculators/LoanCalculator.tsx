@@ -1,0 +1,1 @@
+// Content of updated LoanCalculator.tsx with loan balance chart
