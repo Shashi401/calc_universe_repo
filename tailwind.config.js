@@ -1,0 +1,113 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eef5ff',
+          100: '#d9e8ff',
+          200: '#bcd8ff',
+          300: '#8bc1ff',
+          400: '#549fff',
+          500: '#2979ff', // Primary electric blue
+          600: '#1259ff',
+          700: '#0e45ea',
+          800: '#1138bd',
+          900: '#153694',
+        },
+        secondary: {
+          50: '#f0f7ff',
+          100: '#e0f0ff',
+          200: '#c7e3ff',
+          300: '#a0cfff',
+          400: '#72b4ff',
+          500: '#3d94ff',
+          600: '#2275ff',
+          700: '#0a5ced',
+          800: '#0f4bc0',
+          900: '#134298',
+        },
+        accent: {
+          50: '#fbf1ff',
+          100: '#f5e1ff',
+          200: '#ecc3ff',
+          300: '#df96ff',
+          400: '#d05cff',
+          500: '#b931f7', // Accent purple
+          600: '#a816e0',
+          700: '#8c0dbc',
+          800: '#730f99',
+          900: '#60117c',
+        },
+        success: {
+          50: '#effef7',
+          100: '#d7fceb',
+          200: '#b2f8d6',
+          300: '#79efb7',
+          400: '#3ddf91',
+          500: '#10c46b',
+          600: '#06a358',
+          700: '#087f4a',
+          800: '#0a633c',
+          900: '#095234',
+        },
+        warning: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fbd34d',
+          400: '#fac021',
+          500: '#eaaa08',
+          600: '#ca8a04',
+          700: '#a16207',
+          800: '#854d0e',
+          900: '#713f12',
+        },
+        error: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+        },
+        dark: {
+          100: '#cfd1d9',
+          200: '#a5a8b3',
+          300: '#7c7f8c',
+          400: '#52556a',
+          500: '#292c43', // Dark background
+          600: '#1e1f31',
+          700: '#13131f',
+          800: '#090a13',
+          900: '#030307',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Space Grotesk', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+        floatSlow: 'float 8s ease-in-out infinite',
+        floatFast: 'float 4s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
